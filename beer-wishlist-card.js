@@ -66,7 +66,7 @@ class BeerWishlistCard extends HTMLElement {
       <tbody>
     `;
       if (hass.states[this._config.entity]) {
-        const list = this._filterCards(hass.states[this._config.entity].attributes.beer);
+        const list = this._filterCards(hass.states[this._config.entity].attributes);
 
         if (list !== undefined && list.length > 0) {
           const updated_content = `
