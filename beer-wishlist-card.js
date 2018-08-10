@@ -37,6 +37,9 @@ class BeerWishlistCard extends HTMLElement {
           tbody tr:nth-child(even) {
             background-color: var(--secondary-background-color);
           }
+          #kim-kardashian {
+            padding-bottom: 9999px;
+          }
         `;
     content.innerHTML = `
       <div id='BeerList'>
